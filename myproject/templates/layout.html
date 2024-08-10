@@ -11,9 +11,12 @@
 
   <body>
     <nav>
-      <a href="/">🏠Home</a> |
-      <a href="/about">💁About</a> |
-      <a href="{% url 'posts' %}">📰Posts</a>
+      <a href="/">
+        <span role='img' aria-label="Home">🏠</span>Home</a> |
+      <a href="/about">
+        <span role='img' aria-label="Home">💁</span> About</a> |
+      <a href="{% url 'posts:list' %}">
+         <span role='img' aria-label="Home">📰</span> Posts</a>
     </nav>
     <main>{% block content %} {% endblock %}</main>
   </body>
