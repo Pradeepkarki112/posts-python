@@ -14,9 +14,11 @@
       <a href="/">
         <span role='img' aria-label="Home">🏠</span>Home</a> |
       <a href="/about">
-        <span role='img' aria-label="Home">💁</span> About</a> |
+        <span role='img' aria-label="About">💁</span> About</a> |
       <a href="{% url 'posts:list' %}">
-         <span role='img' aria-label="Home">📰</span> Posts</a>
+        <span role='img' aria-label="Posts">📰</span> Posts</a> |
+      <a href="{% url 'users:register' %}">
+        <span role='img' aria-label="User Registration">🚀</span> Register</a> 
     </nav>
     <main>{% block content %} {% endblock %}</main>
   </body>
