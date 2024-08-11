@@ -18,7 +18,9 @@
       <a href="{% url 'posts:list' %}">
         <span role='img' aria-label="Posts">📰</span> Posts</a> |
       <a href="{% url 'users:register' %}">
-        <span role='img' aria-label="User Registration">🚀</span> Register</a> 
+        <span role='img' aria-label="User Registration">🚀</span> Register</a> |
+      <a href="{% url 'users:login' %}">
+        <span role='img' aria-label="User Login">🔐</span> Login</a> 
     </nav>
     <main>{% block content %} {% endblock %}</main>
   </body>
